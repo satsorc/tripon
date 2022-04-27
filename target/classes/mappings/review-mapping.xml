@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ReviewDAO">
+
+	<resultMap id="reviewResult" type="review">
+		<id property="review_num" column="REVIEW_NUM"></id>
+		<result property="review_content" column="REVIEW_CONTENT"></result>
+		<result property="review_writer" column="REVIEW_WRITER"></result>
+		
+	</resultMap>
+
+	<insert id="insertReview">
+		<![CDATA[
+			INSERT INTO REVIEW (REVIEW_CONTENT, REVIEW_WRITER) 
+			VALUES (#{REVIEW_CONTENT},#{REVIEW_WRITER})
+		]]>
+	</insert>
+
+	<update id="updateReview">
+		<![CDATA[
+			UPDATE REVIEW SET REVIEW_CONTENT=#{REVIEW_CONTENT}, REVIEW_WRITER=#{REVIEW_WRITER}
+			WHERE REVIEW_NUM= #{review_num}
+			
+		]]>
+	</update>
+
+	<delete id="deleteReview">
+		<![CDATA[
+			DELETE FROM REVIEW WHERE REVIEW_NUM=#{review_num}
+		]]>
+	</delete>
+	
+	<select id="getReviewTotal" resultType="review">
+			<if test="searchCondition == 'REVIEW_TITLE'">
+				SELECT COUNT(CASE WHEN REVIEW_TITLE LIKE CONCAT('%', #{searchKeyword}, '%') THEN 1 END) AS TOTAL FROM REVIEW
+			</if>
+			<if test="searchCondition == 'REVIEW_CONTENT'">
+				SELECT COUNT(CASE WHEN REVIEW_CONTENT LIKE CONCAT('%', #{searchKeyword}, '%') THEN 1 END) AS TOTAL FROM REVIEW
+			</if>
+	</select>
+
+	<select id="getReview" resultType="review">
+		<![CDATA[
+			SELECT * FROM REVIEW WHERE REVIEW_NUM=#{review_num}
+		]]>
+	</select>
+
+	<select id="getReviewList" resultMap="reviewResult">
+			SELECT * FROM REVIEW
+
+	</select>
+	
+
+</mapper>

@@ -1,0 +1,119 @@
+@charset "UTF-8";
+ * {
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.container {
+	padding: 0px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+table, th, td {
+    text-align: center;
+}
+.table thead th {
+	border-top: none;
+	border-bottom: 1px solid black;
+}
+td {
+	color: #a6adb6;
+}
+.noticeList {
+	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	padding: 50px;
+	background-color: #FFF;
+	font-size: 14px;
+	display: flex;
+	flex-direction: column;
+}
+.ntcmng {
+    width: 100%;
+    padding: 20px 0px 10px 0px;
+    float: left;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_flex {
+    display: flex;
+    justify-content: space-between;
+}
+#sel1 {
+	width: 100px;
+	margin-right: 5px;
+}
+.search-1 {
+	font-size: 16px;
+	width: 58px;
+	height: 38px;
+/* 	border-radius: 0.25rem; */
+	border-radius: 0px 5px 5px 0px !important;
+	margin-right: 5px;
+}
+.top-tap {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+}
+.pagination {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	border-radius: 0.25rem;
+}
+a.page-link:hover {
+	color: #5621ad;
+}
+.page-link {
+	position: relative;
+	display: block;
+	line-height: 1.25;
+	color: #5621AD;
+	font-weight: bold;
+	background-color: #FFF;
+	border: 1px solid #dee2e6;
+	
+}
+ul {
+    list-style: none;
+}
+#rgtbtn {
+   flex: none;
+   border-radius: 5px;
+   margin: 0px;
+ }
+.mst {margin:auto 10px;}
+
+.mb-3 {
+	margin: 0px !important;
+	display: flex;
+	justify-content: right;
+}
+.mb-3>.form-control {
+	width: 200px;
+}
+.input-group-append {
+	display: flex;
+	justify-content: right;
+}
+.top-tap-div {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+}
+.bottombtn {
+	display: flex;
+	justify-content: right;
+/* 	float: right; */
+}
+.page-item.active .page-link {
+	border-color: #5f04f9 !important;
+	background-color: #5f04f9 !important;
+}
+
+/* @media screen and (max-width: 991px) {
+
+} */

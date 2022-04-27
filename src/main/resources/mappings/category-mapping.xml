@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="CategoryDAO">
+
+	<resultMap id="categoryResult" type="category">
+		<id property="category_num" column="CATEGORY_NUM"></id>
+		<result property="category_name" column="CATEGORY_NAME"></result>
+		<result property="category_img" column="CATEGORY_IMG"/>
+		
+	</resultMap>
+
+	<insert id="insertCategory">
+		<![CDATA[
+			INSERT INTO CATEGORY (CATEGORY_MAINTITLE, ACT_SUBTITLE, ACT_WRITER, ACT_BOOKINGDATE1,ACT_BOOKINGDATE2,ACT_BOOKINGDATE3,ACT_BOOKINGDATE4,
+			ACT_OPTNUM1, ACT_OPTNUM2, ACT_OPTNUM3, ACT_OPTNUM4, ACT_OPTUNIT1,ACT_OPTUNIT2,ACT_OPTUNIT3,ACT_OPTUNIT4,
+			 ACT_OPTPRICE1, ACT_OPTPRICE2, ACT_OPTPRICE3, ACT_OPTPRICE4, ACT_CONTENT, ACT_ANNOUNCEMENT) 
+			VALUES (#{CATEGORY_MAINTITLE}, #{ACT_SUBTITLE}, #{ACT_WRITER}, #{ACT_BOOKINGDATE1}, #{ACT_BOOKINGDATE2}, #{ACT_BOOKINGDATE3}, #{ACT_BOOKINGDATE4},
+			#{ACT_OPTNUM1}, #{ACT_OPTNUM2}, #{ACT_OPTNUM3}, #{ACT_OPTNUM}4, #{ACT_OPTUNIT1}, #{ACT_OPTUNIT2}, #{ACT_OPTUNIT3}, #{ACT_OPTUNIT4},
+			 #{ACT_OPTPRICE1}, #{ACT_OPTPRICE2}, #{ACT_OPTPRICE3}, #{ACT_OPTPRICE4}, #{ACT_CONTENT}, #{ACT_ANNOUNCEMENT})
+		]]>
+	</insert>
+
+	<update id="updateCategory">
+		<![CDATA[
+			UPDATE CATEGORY SET CATEGORY_MAINTITLE=#{CATEGORY_MAINTITLE}, ACT_SUBTITLE=#{ACT_SUBTITLE}, ACT_WRITER=#{ACT_WRITER}, 
+			ACT_BOOKINGDATE1=#{ACT_BOOKINGDATE1}, ACT_BOOKINGDATE2=#{ACT_BOOKINGDATE2}, ACT_BOOKINGDATE3=#{ACT_BOOKINGDATE3}, ACT_BOOKINGDATE4=#{ACT_BOOKINGDATE4},
+			ACT_OPTNUM1=#{ACT_OPTNUM1}, ACT_OPTNUM2=#{ACT_OPTNUM2}, ACT_OPTNUM3=#{ACT_OPTNUM3}, ACT_OPTNUM4=#{ACT_OPTNUM}4,
+			ACT_OPTUNIT1=#{ACT_OPTUNIT1}, ACT_OPTUNIT2=#{ACT_OPTUNIT2}, ACT_OPTUNIT3=#{ACT_OPTUNIT3}, ACT_OPTUNIT4=#{ACT_OPTUNIT4},
+			ACT_OPTPRICE1=#{ACT_OPTPRICE1}, ACT_OPTPRICE2=#{ACT_OPTPRICE2}, ACT_OPTPRICE3=#{ACT_OPTPRICE3}, ACT_OPTPRICE4=#{ACT_OPTPRICE4}, 
+			ACT_CONTENT=#{ACT_CONTENT}, ACT_ANNOUNCEMENT=#{ACT_ANNOUNCEMENT}
+			WHERE ACT_NUM= #{act_num}
+			
+		]]>
+	</update>
+
+	<update id="updateCnt">
+		<![CDATA[
+			UPDATE CATEGORY SET CATEGORY_COUNT=CATEGORY_COUNT+1 WHERE CATEGORY_COUNT=#{category_count}
+		]]>
+	</update>
+
+	<delete id="deleteCategory">
+		<![CDATA[
+			DELETE FROM CATEGORY WHERE CATEGORY_COUNT=#{category_count}
+		]]>
+	</delete>
+	
+	<select id="getCategoryTotal" resultType="category">
+			<if test="searchCondition == 'CATEGORY_TITLE'">
+				SELECT COUNT(CASE WHEN CATEGORY_TITLE LIKE CONCAT('%', #{searchKeyword}, '%') THEN 1 END) AS TOTAL FROM CATEGORY
+			</if>
+			<if test="searchCondition == 'CATEGORY_CONTENT'">
+				SELECT COUNT(CASE WHEN CATEGORY_CONTENT LIKE CONCAT('%', #{searchKeyword}, '%') THEN 1 END) AS TOTAL FROM CATEGORY
+			</if>
+	</select>
+
+	<select id="getCategory" resultType="category">
+		<![CDATA[
+			SELECT * FROM CATEGORY WHERE CATEGORY_NUM=#{category_num}
+		]]>
+	</select>
+
+	<select id="getCategoryList" resultMap="categoryResult">
+			SELECT * FROM CATEGORY
+
+	</select>
+	
+	<select id="getCategoryList_T" resultMap="categoryResult">
+		<![CDATA[
+			SELECT * FROM CATEGORY WHERE CATEGORY_MAINTITLE LIKE CONCAT('%', #{searchKeyword}, '%') ORDER BY CATEGORY_NUM DESC
+		]]>
+	</select>
+	
+	<select id="getCategoryList_C" resultMap="categoryResult">
+		<![CDATA[
+			SELECT * FROM CATEGORY WHERE CATEGORY_CONTENT LIKE CONCAT('%', #{searchKeyword}, '%') ORDER BY CATEGORY_NUM DESC
+		]]>
+	</select>
+
+</mapper>

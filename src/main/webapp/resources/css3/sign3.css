@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+span{
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight:bold;
+	letter-spacing: 2px;
+}
+
+.ht{
+	font-weight: 300;
+}
+.sign{
+	width: 70%;
+	margin:150px auto; 
+	padding:0;
+	background-color: #FFF;
+	font-size:14px;
+	display:flex;
+	flex-direction:column;
+}
+
+.sign h2 {
+	margin-top: 50px;
+	color: #000000; 
+	font-size: 22px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.sign h1 {
+	color: #000000; 
+	line-height: 35px;
+	font-size: 30px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.sign span {
+	color: #5F04F9;
+	font-weight:bold;
+}
+
+.submit {
+  margin-top: 40px;
+  width: 100%;
+  float: right;
+  
+}
+.submit input {
+  width: 150px;
+  height: 50px;
+  border: 0;
+  outline: none;
+  border-radius: 5px;
+  background: #5F04F9;
+  color: white;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+input[type=submit] {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight:bold;
+}

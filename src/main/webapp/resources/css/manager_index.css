@@ -1,0 +1,56 @@
+.page-title {
+  margin: 25px 0px 30px 40px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #454545;
+}
+.person-list-div ul {
+  margin-bottom: 30px;
+  list-style: none;
+  padding: 0px;
+  display: flex;
+}
+.person-group {
+  height: 290px;
+  width: 250px;
+  margin: 100px 40px 0px 40px;
+  box-shadow: 0px 5px 15px 0px #ddcbfc;
+  text-align: center;
+  position: relative;
+}
+.person-img {
+  position: absolute;
+  top: -68px;
+  left: 60px;
+}
+.person-name {
+  margin: 65px 0px 8px 0px;
+  padding-left: 10px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  color: #41413f;
+  letter-spacing: 10px;
+}
+.person-role {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #41413f;
+}
+.person-dash {
+  margin-bottom: 8px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: lighter;
+  color: #909090;
+}
+.minimize {
+  font-size: 25px;
+}
+.person-dept {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  color: #a5a5a5;
+}

@@ -1,0 +1,260 @@
+@charset "UTF-8";
+
+
+input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 2px solid #dddddd ;
+    appearance: none;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+input[type=checkbox]:checked {
+    background-image: url("/resources/imgs/check.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    border-style: none;
+}
+input[type=checkbox]:disabled {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 2px solid #dddddd ;
+    appearance: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+
+
+label {
+  margin-bottom: 0;
+}
+
+
+.bol{
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: bold;
+}
+
+.cd{
+	width:500px;
+}
+
+.la{
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: bold;
+	width : 200px;
+	padding: 0px;
+}
+
+.ct{
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 500;
+	color : #8b8b8d;
+}
+
+.sign{
+	width: 70%;
+	margin:50px auto; 
+	padding:0;
+	background-color: #FFF;
+	font-size:14px;
+	display:flex;
+	flex-direction:column;
+	margin-top: 100px;
+}
+
+.sign h2 {
+	margin-top: 130px;
+	color: #000000; 
+	font-size: 22px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.sign h1 {
+	color: #000000; 
+	line-height: 35px;
+	font-size: 30px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.sign h3 {
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight:bold;
+	font-family: 'Noto Sans KR', sans-serif;
+	margin-top: 100px;
+}
+
+.sign-inner-div {
+	margin: 0px 10px;
+}
+
+.sign-inner-input {
+	width: 100%;
+}
+
+.inner-div-col {
+	padding: 0px;
+}	
+
+.phonenumber {
+	margin: 15px 10px;
+	height: 45px;
+	align-items: center;
+	color:#666666;
+	font-size: 14px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.phonenumber input {
+	width: 100%;
+	height: 35px;
+	text-align: center;
+	border: 1px solid #f0f0f0;
+	background-color: #f0f0f0;
+	outline-style: none;
+	color: #000000;
+	font-family: 'Noto Sans KR', sans-serif;
+	
+}
+
+.phonenumber select {
+	width: 100%;
+	height: 35px;
+	background: #f0f0f0;
+	outline-style: none;
+	border: none;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.phonenumber button {
+	width: 100%;
+	height: 35px;
+	background: #ffffff;
+	border: 2px solid #FE6400;
+	border-radius: 5px;
+	color: #FE6400;
+	font-weight:bold;
+	font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+.phone-group {
+	margin: 0px;
+}
+
+.phone-group-input {
+	 display: flex;
+	 align-items: center;
+}
+
+.phone-group input {
+	margin: 0px;
+}
+
+.number {
+	margin: 15px 10px;
+	height: 45px;
+	align-items: center;
+	color:#666666;
+	font-size: 14px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.number .la {
+	margin: 0px;
+}
+
+.number input {
+	width: 20%;
+	height: 35px;
+	text-align:center;
+	border: 1px solid #f0f0f0;
+	background-color: #f0f0f0;
+	outline-style: none;
+	color: #000000;
+	font-family: 'Noto Sans KR', sans-serif;
+	
+}
+
+.number .row {
+	display: flex;
+	align-items: center;
+	margin: 0px;
+}
+
+
+select:focus{
+	background: #ffffff;
+	box-shadow: 0 0 0 1px #5f04f9;
+}
+
+input:focus {
+	background: #ffffff;
+	box-shadow: 0 0 0 1px #5f04f9;
+}
+
+.point{
+	/* 인증 번호 */
+	color: #5F04F9;
+	font-weight:bold;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.submit {
+	text-align: center;
+	padding: 50px;
+ 	width: 100%;
+ 	margin-bottom : 40px;
+}
+		
+.submit input {
+	width: 100px;
+	height: 50px;
+	border: 0;
+	outline: none;
+	border-radius: 5px;
+	background: #5F04F9;
+	color: white;
+	font-size: 1.2em;
+	letter-spacing: 2px;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.subject_underline {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	border-bottom: solid 1px #000000;
+
+}	
+
+.subject_underline2 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-bottom: solid 1px #c0c0c0;
+
+}	
+
+
+.subject_underline3 {
+	border-bottom: solid 1px #000000;
+
+}	
+
+.subject_underline4 {
+	border-bottom: solid 1px #c0c0c0;
+
+}
+
+@media screen and (max-width:767px) {
+	.phone-group button {
+		padding : 0;
+		font-size: 10px;
+	}
+}
+
+

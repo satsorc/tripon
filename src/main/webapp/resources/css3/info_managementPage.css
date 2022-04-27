@@ -1,0 +1,277 @@
+/* info_managementPage */
+#faq-page {
+    display: flex;
+    margin: 30px auto;
+}
+#menu-bar {
+    width: 250px;
+    padding-left: 15px;
+}
+.menu-list {
+    padding: 0px;
+    list-style: none;
+}
+.menu-list li{
+    padding: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+.menu-list li:first-child {
+    margin: 20px 0px;
+}
+.menu-list li:first-child a {
+    font-weight: bold;
+    color: #5622ad;
+}
+.menu-list li a {
+    color: #666;
+}
+
+button {
+    width: 80px;
+    height: 30px;
+    padding: 4px 10px !important;
+}
+.info-main{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+#info-mng-div {
+    padding-right: 15px;
+    width: 100%;
+}
+#info-mng-div > div:nth-child(2) {
+    border-top : 1px solid #c2c2c2;
+}
+#info-mng-div > div:last-child {
+    border-bottom : 1px solid #c2c2c2;
+}
+.form-group {
+    margin: 0px;
+    padding: 20px 0px 0px 30px;
+}
+.text-group {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.text-group > span:first-child {
+    display: inline-block;
+    width: 100px;
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+.text-group > span:last-child {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #999;
+    letter-spacing: 1px;
+}
+.update-group {
+    margin: 15px 0px;
+}
+.form-control {
+    width: 200px;
+    height: 30px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.password-group {
+	margin: 15px 0px 20px 0px;
+}
+.password-group .form-control {
+    margin-top: 0px;
+}
+.password-group .form-group {
+    padding: 0px 0px 10px 0px;
+    margin: 0px;
+}
+.password-group div:nth-child(3) {
+	padding-bottom: 0px;
+}
+.password-group input {
+	width: 250px;
+}
+.form-group input:focus {
+    border-color: #dddddd;
+    box-shadow: none;
+}
+.update-btn {
+    margin: 20px 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #666;
+    border: 1px solid #c2c2c2;
+}
+.update-btn:hover {
+    color: #666;
+}
+.update-btn:focus {
+    box-shadow: none;
+}
+.update-group {
+    display: none;
+}
+.submit-btn {
+    margin: 10px 5px 0px 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: white;
+    background-color: rgba(95, 4, 249, 0.8);
+}
+.submit-btn:hover {
+    color: white;
+}
+.submit-btn:focus {
+    box-shadow: none;
+}
+.cancel-btn {
+    margin-top: 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #666;
+    border: 1px solid #c2c2c2;
+}
+.cancel-btn:hover {
+    color: #666;
+}
+.cancel-btn:focus {
+    box-shadow: none;
+}
+.nicknameCheck-group {
+    display: flex;
+}
+.nicknameCheck-btn {
+    margin-left: 10px;
+    width: 105px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: white;
+    background-color: rgba(95, 4, 249, 0.8);
+}
+.nicknameCheck-btn:hover {
+    color: white;
+}
+.nicknameCheck-btn:focus {
+    box-shadow: none;
+}
+.certification-group-1 {
+    display: flex;
+}
+.certification-btn-1 {
+    margin-left: 10px;
+    width: 105px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: white;
+    background-color: rgba(95, 4, 249, 0.8);
+}
+.certification-btn-1:hover {
+    color: white;
+}
+.certification-btn-1:focus {
+    box-shadow: none;
+}
+.certification-group-2 {
+    display: flex;
+    margin-top: 5px;
+}
+.certification-btn-2 {
+    margin-left: 10px;
+    width: 105px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: white;
+    background-color: rgba(95, 4, 249, 0.8);
+}
+.certification-btn-2:hover {
+    color: white;
+}
+.certification-btn-2:focus {
+    box-shadow: none;
+}
+.certification-group-2 input {
+/* 	width: 185px; */
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+}
+
+
+.invalid-check-feedback {
+	font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+}
+form.was-validated input:invalid {
+    border-color: #ff6500 !important;
+}
+.form-control:valid {
+    border-color: #dddddd !important;
+    /* border-color: #5f04f9 !important; */
+}
+.form-control.is-valid, .was-validated .form-control:valid {
+    background-image: none !important;
+}
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    background-image: none !important;
+}
+.invalid-feedback {
+    margin-bottom: 5px;
+    color: #ff6500 !important;
+}
+
+@media screen and (max-width:991px) {
+    #faq-page {
+        display: block;
+    }
+    #info-mng-div {
+        padding: 0px 15px;
+    }
+    #menu-bar {
+        width: 100%;
+        padding: 0px;
+    }
+    .menu-list {
+        padding: 0px 15px;
+        margin-bottom: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .menu-list li {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-list li:first-child {
+        margin: 0px;
+    }
+    .menu-list li a {
+        text-align: center;
+        display: block;
+        padding: 20px;
+        width: 100%;
+    }
+    .menu-list li:first-child {
+        background-color: #c2c2c2;
+    }
+    .menu-list li:first-child a {
+        font-weight: normal;
+        color: #fff;
+    }
+    .menu-list li:last-child {
+        background-color: #fff;
+        border-bottom: 1px solid #c2c2c2;
+    }
+}

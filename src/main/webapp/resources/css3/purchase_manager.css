@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/* 	BOOTSTRAP */
+	.list-group-item {
+		border-top:none;
+		border-left:none;
+		border-right:none;
+	    border-bottom: 1px solid rgba(0,0,0,.125);
+	}
+	.page-item.active .page-link {	
+		background-color: #5621ad;
+		border-color: #5621ad;
+	}
+
+	a.page-link{
+		color: #5621ad;
+		font-weight: bold;
+	}
+
+	.page-link:hover {
+		color: #5621ad;
+	    background-color: #f9f9f9;
+	}
+
+/* 	기본 형식 */
+	*	{padding: 0;margin: 0;}
+   
+	body{
+		font-family: 'Noto Sans KR', sans-serif;
+		text-align: center;
+	}
+	
+/* 	결제 관리자 페이지 TITLE */
+	.purchase-title{
+		font-size: 18px;
+		font-weight: bold;
+		text-align: left;
+	}
+	
+	.purchase-title-contents{
+		font-size: 25px;
+		text-align: left;
+		padding-left: 20px;
+	}
+	
+/* 	결제 관리자 페이지 BODY */
+	.purchase-body{
+		background-color:#fff;
+		margin-left:5px;
+		margin-right:5px;
+		padding-left:50px;
+		padding-right:50px;
+		border-radius:5px;
+	}
+	
+/* 	결제 관리자 페이지 HEADER */
+	.purchase-body-header{
+		height:20px;
+	}
+	
+/* 	결제 관리자 페이지 TOP MENU */
+	.purchase-top-menu{
+		font-weight: bold;
+		border-bottom: 1px solid #000000;
+	}
+	
+/* 	결제 관리자 페이지 LIST */
+	.purchase-list{
+		font-weight: bold;
+		color:#a6adb6;
+	}
+	
+/* 	결제 취소 text */
+	.canceltext{
+		color:red;
+	}
+	
+/* 	결제 관리자 페이지 LIST 상세보기 BTN */
+	.purchase-view{ 
+	}
+	
+/* 	결제 관리자 페이지 LIST 상세정보창 */
+	.purchase-list-view{
+		color:#a6adb6;
+		display: none;
+		background-color: #f9f9f9;
+	}
+	
+/* 	결제 관리자 페이지 MODAL 결제 취소 BTN */
+	.purchase-Order-Cancel-btn{
+	}
+	
+/* 	결제 관리자 페이지 MODAL 닫기 BTN */
+	.purchase-exit-btn{
+	}
+	
+/* 	결제 관리자 페이지 BODY FOOTER */
+	.purchase-body-footer{
+		height:40px;
+		width:100%;
+	}
+
+/* 	결제 관리자 list 수직 정렬  : row 안에 들어있는 div 전체 지정*/
+	.purchase-list-line > div {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+/* 	결제 관리자 list 수직 정렬  : row 안에 들어있는 div 전체 지정*/
+	.purchase-list-view-line > div.col-4 {
+		display: flex;
+		justify-content: left;
+		align-items: center;
+	}
+	
+
+.purchase-management-menu a {color: #000 !important;}
+
+	

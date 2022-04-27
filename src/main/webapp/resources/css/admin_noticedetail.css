@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {
+	font-family: 'Noto Sans', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+.newntcbtn {
+	display: flex;
+	justify-content: right;
+	margin-bottom: 10px;
+}
+.ntcmng {
+	width: 100%;
+	border-bottom: 1px solid #dddddd;
+	margin: 20px 0px 10px;
+	padding: 20px 0px 10px 30px;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu_flex {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 22px;
+}
+.backcol {
+	padding: 40px;
+	background-color: #FFF;
+	font-size: 14px;
+}
+.writer_date {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	color: #666;
+	margin-bottom: 30px;
+	font-size: 12px;
+}
+.updatebtn {
+	display: flex;
+	justify-content: right;
+	margin-top: 20px;
+	/* 	float: right; */
+}

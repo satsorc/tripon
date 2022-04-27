@@ -1,0 +1,78 @@
+@charset "UTF-8";
+* {
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.ntcmng {
+  width: 100%;
+  padding: 20px 0px 0px;
+  float: left;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu_flex {
+  display: flex;
+  justify-content: space-between;
+/*   margin-bottom: 22px; */
+}
+.newntcbtn {
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: right;
+/* 	margin: 0px 10px 0px -1px; */
+/* 	margin-top: 20px; */
+/* 	margin: 0px !important; */
+}
+#line-black {
+	color: black;
+}
+.insertList {
+	width: 100%;
+	padding: 50px;
+	background-color: #FFF;
+	font-size: 14px;
+	display: flex;
+	flex-direction: column;
+}
+table, td {
+  border:1px solid #dddddd;
+  text-align: center;
+}
+
+td {
+	color: black;
+}
+table {
+  width: 100%;
+}
+table > tr > td {
+  width: 100px;
+}
+.form-group {
+  margin: 0px;
+}
+.form-control {
+	border-style: none;
+}
+.form-control:focus {
+	box-shadow: none;
+}
+.savebtn {
+  margin-top: 20px;
+  justify-content: right;
+  display: flex;
+}
+#target-select {
+	outline: none;
+	width: 100%;
+	border-style: none;
+}
+#fileInput {
+	width: auto;
+}
+#comment {
+	resize: none;
+}
+.btn-default {
+	margin: 0px;
+}

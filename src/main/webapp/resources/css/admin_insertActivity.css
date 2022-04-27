@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+*:focus {
+  border-style: none;
+}
+input {
+  color: #a6adb6;
+  caret-color: #5f04f9;
+  border: 1px solid #ddd;
+}
+textarea {
+  resize: none;
+}
+a {
+  color: #fff;
+}
+#addCategory {
+  margin-bottom: 15px;
+} /* 카테고리추가버튼 */
+#addOption {
+  margin-bottom: 15px;
+} /* 상품옵션추가버튼 */
+
+#selectCategory {
+  padding-left: 0;
+}

@@ -1,0 +1,142 @@
+/* FAQPage */
+#faq-page {
+    display: flex;
+    margin: 30px auto;
+}
+#menu-bar {
+    width: 250px;
+    padding-left: 15px;
+}
+.menu-list {
+    padding: 0px;
+    list-style: none;
+}
+.menu-list li{
+    padding: 0px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+.menu-list li:first-child {
+    margin: 20px 0px;
+}
+.menu-list li:last-child a {
+    font-weight: bold;
+    color: #5622ad;
+}
+.menu-list li a {
+    color: #666;
+}
+#faq-list-div {
+    padding-right: 15px;
+    width: 100%;
+}
+h5 {
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+h3 {
+    border-bottom: solid;
+}
+.list-group-item {
+    padding: 0px;
+    cursor: pointer;
+}
+.arrow {
+    text-align: right;
+    line-height: 32px;
+}
+.questlist {
+    padding: 30px 0px;
+    padding-right: 2px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+.panel {
+    display: none;
+    background-color: #dddddd; 
+}
+.panel p {
+    background-color: #dddddd;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.questlist p {
+    margin: 0px;
+}
+.top_link {
+    display: flex;
+    padding: 0px;
+    list-style: none;
+    border-bottom: 1px solid #c2c2c2;
+}
+.top_link li {
+    position: relative;
+    padding: 0px 10px 10px 10px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+.top_link li:first-child {
+    padding: 00px 10px 10px 0px;
+}
+.top_link li a.on::after {
+    content: '';
+    display: block;
+    background-color: #5622ad;
+    height: 3px;
+    position: relative;
+    top: 12px;
+}
+
+@media screen and (max-width:991px) {
+    #faq-page {
+        display: block;
+    }
+    #faq-list-div {
+        padding: 0px 15px;
+    }
+    #menu-bar {
+        width: 100%;
+        padding: 0px;
+    }
+    .menu-list {
+        padding: 0px 15px;
+        margin-bottom: 30px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .menu-list li {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-list li:first-child {
+        margin: 0px;
+    }
+    .menu-list li a {
+        text-align: center;
+        display: block;
+        padding: 20px;
+        width: 100%;
+    }
+    .menu-list li:last-child {
+        background-color: #c2c2c2;
+    }
+    .menu-list li:last-child a {
+        font-weight: normal;
+        color: #fff;
+    }
+    .menu-list li:first-child {
+        background-color: #fff;
+        border-bottom: 1px solid #c2c2c2;
+    }
+}
